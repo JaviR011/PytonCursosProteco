@@ -1,4 +1,4 @@
-Para un proyecto de nivel intermedio que abarque varios de estos temas, podrías considerar un sistema de gestión de tareas y proyectos con una interfaz de línea de comandos. Este proyecto les permitirá a tus alumnos aplicar los conceptos que han aprendido de manera integrada y práctica. A continuación, se describen los requisitos y componentes del proyecto:
+
 
 ### Sistema de Gestión de Tareas y Proyectos
 
