@@ -103,14 +103,16 @@ def tarea(nombre, retraso):
     print(f"Terminando {nombre}")
     return nombre
 
-# Crear un pool de procesos
-with ProcessPoolExecutor(max_workers=2) as executor:
-    futures = [executor.submit(tarea, f"Tarea{i}", i) for i in range(1, 4)]
-    
-    for future in as_completed(futures):
-        print(f"Resultado: {future.result()}")
+if __name__ == "__main__":
+    # Crear un pool de procesos
+    with ProcessPoolExecutor(max_workers=2) as executor:
+        futures = [executor.submit(tarea, f"Tarea{i}", i) for i in range(1, 4)]
+        
+        for future in as_completed(futures):
+            print(f"Resultado: {future.result()}")
 
-print("Todas las tareas completadas")
+    print("Todas las tareas completadas")
+
 ```
 
 ### Programación Asíncrona con `asyncio`
