@@ -1,4 +1,4 @@
-El error que estás viendo indica que `gcc` no está instalado o no está en tu PATH en tu sistema Windows. Vamos a solucionar esto paso a paso.
+
 
 ### Paso 1: Instalar MinGW
 
