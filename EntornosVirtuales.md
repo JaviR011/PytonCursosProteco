@@ -1,6 +1,6 @@
 Un entorno virtual en Python es una herramienta que permite crear espacios aislados del sistema global de Python en tu computadora. Cada entorno virtual puede tener sus propias versiones de paquetes y dependencias, sin afectar ni ser afectado por otros entornos o por el sistema global de Python. Esto es especialmente útil cuando trabajas en múltiples proyectos que requieren diferentes versiones de bibliotecas o incluso de Python mismo.
 
-Aquí tienes algunos puntos clave sobre los entornos virtuales en Python:
+Puntos clave sobre los entornos virtuales en Python:
 
 1. **Aislamiento**: Un entorno virtual mantiene las dependencias requeridas por diferentes proyectos en lugares separados, evitando conflictos de versiones y simplificando la gestión de dependencias.
 
@@ -251,110 +251,6 @@ Aquí tienes un ejemplo completo de cómo usar `venv` en un proyecto:
 
 Usar `venv` es una práctica recomendada para mantener tus proyectos de Python organizados y evitar conflictos de dependencias.
 
-
-
-
-
-
-
-Para crear y utilizar un entorno virtual con el módulo `venv` en Python, sigue estos pasos:
-
-### Paso 1: Crear el Entorno Virtual
-
-1. Abre tu terminal o línea de comandos.
-2. Navega al directorio donde quieres crear tu entorno virtual. Por ejemplo, si quieres crear un entorno en un directorio llamado `proyecto`, puedes usar:
-
-   ```bash
-   cd ruta/a/tu/proyecto
-   ```
-
-3. Crea el entorno virtual usando el comando `venv`. Aquí llamaremos al entorno virtual `mi_entorno`:
-
-   ```bash
-   python -m venv mi_entorno
-   ```
-
-   Esto creará un directorio llamado `mi_entorno` en tu directorio de proyecto.
-
-### Paso 2: Activar el Entorno Virtual
-
-La forma de activar el entorno virtual depende del sistema operativo que estés usando.
-
-#### En Windows:
-
-```bash
-mi_entorno\Scripts\activate
-```
-
-#### En macOS y Linux:
-
-```bash
-source mi_entorno/bin/activate
-```
-
-Una vez activado, deberías ver el nombre del entorno virtual en tu prompt de la terminal, lo que indica que el entorno está activo. Por ejemplo:
-
-```bash
-(mi_entorno) $
-```
-
-### Paso 3: Instalar Paquetes en el Entorno Virtual
-
-Ahora puedes instalar los paquetes que necesites usando `pip`. Estos paquetes se instalarán solo dentro del entorno virtual y no afectarán la instalación global de Python.
-
-Por ejemplo, para instalar `requests` y `flask`:
-
-```bash
-pip install requests flask
-```
-
-### Paso 4: Trabajar en tu Proyecto
-
-Realiza tus desarrollos y pruebas dentro del entorno virtual. Puedes usar cualquier editor de texto o IDE para trabajar en tu código mientras el entorno virtual está activado.
-
-### Paso 5: Desactivar el Entorno Virtual
-
-Cuando hayas terminado de trabajar, puedes desactivar el entorno virtual con el siguiente comando:
-
-```bash
-deactivate
-```
-
-Esto te devolverá al entorno global de Python.
-
-### Resumen Completo
-
-1. **Crear el Entorno Virtual**:
-
-   ```bash
-   python -m venv mi_entorno
-   ```
-
-2. **Activar el Entorno Virtual**:
-
-   - En Windows:
-
-     ```bash
-     mi_entorno\Scripts\activate
-     ```
-
-   - En macOS y Linux:
-
-     ```bash
-     source mi_entorno/bin/activate
-     ```
-
-3. **Instalar Paquetes**:
-
-   ```bash
-   pip install requests flask
-   ```
-
-4. **Desactivar el Entorno Virtual**:
-
-   ```bash
-   deactivate
-   ```
 
 ### Notas Adicionales
 
