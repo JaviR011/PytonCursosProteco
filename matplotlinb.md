@@ -1,3 +1,39 @@
+```python
+
+import matplotlib.pyplot as plt  # Importamos la librería matplotlib.pyplot y la renombramos como plt
+
+# Datos para graficar
+x = [1, 2, 3, 4, 5]  # Valores del eje x
+y = [2, 3, 5, 7, 11]  # Valores del eje y
+
+# Crear la figura y los ejes (subplot)
+fig, ax = plt.subplots()
+
+# Graficar los datos (línea)
+ax.plot(x, y, label='Primos')  # Creamos la línea con etiqueta 'Primos'
+
+# Personalizar el gráfico
+ax.set_xlabel('Eje X')  # Etiqueta del eje x
+ax.set_ylabel('Eje Y')  # Etiqueta del eje y
+ax.set_title('Números primos')  # Título del gráfico
+ax.legend()  # Mostrar la leyenda
+
+# Cambiar el color de la línea y el grosor
+ax.plot(x, y, color='red', linewidth=2, label='Primos mejorado')  
+
+# Cambiar el estilo de la línea (puntos, guiones, etc.)
+# Ejemplo: línea con puntos
+# ax.plot(x, y, linestyle='dotted', label='Primos con puntos')
+
+# Ajustar el rango de los ejes si es necesario
+# ax.set_xlim(0, 6)  # Establece el rango del eje x
+# ax.set_ylim(0, 12)  # Establece el rango del eje y
+
+# Mostrar la gráfica
+plt.show()
+```
+
+
 Claro, aquí tienes cada uno de los ejemplos con comentarios detallados línea por línea.
 
 ### Gráficas de Dispersión
