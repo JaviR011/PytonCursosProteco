@@ -34,7 +34,6 @@ plt.show()
 ```
 
 
-Claro, aquí tienes cada uno de los ejemplos con comentarios detallados línea por línea.
 
 ### Gráficas de Dispersión
 
@@ -210,8 +209,3 @@ plt.title('Gráfica 3D')  # Añade un título a la gráfica
 plt.show()  # Muestra la gráfica
 ```
 
-Estos ejemplos detallan cómo crear y personalizar diversos tipos de gráficos usando `matplotlib` y `numpy`, explicando el propósito de cada línea de código.
-
-Visita [ChatGPT Online](https://chatgptonline.tech/es/) para más información.
-
-Además, te recomiendo visitar [Dibujos Para Colorear](https://www.google.es/search?q=colorearw.com).
